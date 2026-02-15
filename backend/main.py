@@ -532,3 +532,4 @@ async def parse_job_url(url: str = Form(...)):
         raise HTTPException(status_code=502, detail=f"URL nicht erreichbar: {e}")
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
